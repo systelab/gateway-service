@@ -1,29 +1,29 @@
-[![Build Status](https://travis-ci.org/systelab/gateway-server.svg?branch=master)](https://travis-ci.org/systelab/gateway-server)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7ce4e563c45b4d09a975d61bed7d5d50)](https://www.codacy.com/app/systelab/gateway-server?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=systelab/gateway-server&amp;utm_campaign=Badge_Grade)
-[![Known Vulnerabilities](https://snyk.io/test/github/systelab/gateway-server/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/systelab/gateway-server?targetFile=pom.xml)
+[![Build Status](https://travis-ci.org/systelab/gateway-service.svg?branch=master)](https://travis-ci.org/systelab/gateway-service)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7ce4e563c45b4d09a975d61bed7d5d50)](https://www.codacy.com/app/systelab/gateway-service?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=systelab/gateway-service&amp;utm_campaign=Badge_Grade)
+[![Known Vulnerabilities](https://snyk.io/test/github/systelab/gateway-service/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/systelab/gateway-service?targetFile=pom.xml)
 
-#  Gateway server
+#  Gateway service
 
-Gateway server is an edge service that provides dynamic routing, monitoring, resiliency, security, and more, based on Zuul
+Gateway service is an edge service that provides dynamic routing, monitoring, resiliency, security, and more, based on Zuul
 Check the repository [Zuul from Netflix][zuul] for more information.
 
 ## Getting Started
 
-To get you started you can simply clone the `gateway-server` repository and install the dependencies:
+To get you started you can simply clone the `gateway-service` repository and install the dependencies:
 
 ### Prerequisites
 
-You need [git][git] to clone the `gateway-server` repository.
+You need [git][git] to clone the `gateway-service` repository.
 
 You will need [Java™ SE Development Kit 8][jdk-download] and [Maven][maven].
 
-### Clone `gateway-server`
+### Clone `gateway-service`
 
-Clone the `gateway-server` repository using git:
+Clone the `gateway-service` repository using git:
 
 ```bash
-git clone https://github.com/systelab/gateway-server.git
-cd gateway-server
+git clone https://github.com/systelab/gateway-service.git
+cd gateway-service
 ```
 
 ### Install Dependencies
@@ -40,7 +40,7 @@ To launch the server, simply run with java -jar the generated jar file.
 
 ```bash
 cd target
-java -jar gateway-server-1.0.jar
+java -jar gateway-service-1.0.jar
 ```
 
 Or with the maven plugin:
@@ -64,13 +64,13 @@ There is another build rule to trigger a new tag and create a 'version-x.y.z' im
 You can always manually create the image with the following command:
 
 ```bash
-docker build -t systelab/gateway-server . 
+docker build -t systelab/gateway-service . 
 ```
 
 ### Run the container
 
 ```bash
-docker run -p 8761:8761 systelab/eureka-server
+docker run -p 8761:8761 systelab/gateway-service
 ```
 
 The app will be available at http://localhost:8761
