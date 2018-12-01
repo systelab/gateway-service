@@ -1,4 +1,4 @@
-package com.systelab.zuul;
+package com.systelab.gateway;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
