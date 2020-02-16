@@ -4,7 +4,7 @@
 
 #  Gateway service
 
-Gateway service is an edge service that provides dynamic routing, monitoring, resiliency, security, and more, based on Zuul
+Gateway service is an edge service that provides dynamic routing, monitoring, resiliency, security, and more, based on Zuul. 
 Check the repository [Zuul from Netflix][zuul] for more information.
 
 ## Getting Started
