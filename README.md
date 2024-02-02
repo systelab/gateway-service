@@ -49,7 +49,6 @@ Or with the maven plugin:
 mvn spring-boot:run
 ```
 
-
 Head to http://localhost:8761 in order to see the Gateway Daskboard
 
 
